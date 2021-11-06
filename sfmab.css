@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+.carousel {
+    background-color: darkblue;
+    height: 675px;
+}
+.carousel img {
+    width: 48%;
+    padding-top: 70px;
+    height: 430px;
+}
+p {
+    font-size: 19px;
+    color: white;
+}
+h1 {
+    font-family: fantasy;
+}

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Anime</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stream.css">
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="logo" href="index.html" ><img src="LogoMakr-4vg73x.png" style="position: relative; top: -5px;"></a>
+        </div>
+        <div class="collapse b navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="marvel.html">Reviews</a></li>
+                <li><a href="anime.html">Ranker</a></li>
+                <li><a href="stream.html">Download Anime</a></li>
+                <li><a href="vote.html">Vote</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="ep.js"></script>
+    </head>
+    <body>
+        <div class="">
+        
+            <article>
+                <img id="sobi" src="stream.png" class="img-responsive"><span>
+                <input type="search" placeholder="Search Here" id="search" onchange="anime()" list="anime">
+                <datalist id="anime">
+                    <option>Attack on Titan</option>
+                    <option>Attack on Titan Season 2</option>
+                    <option>Attack on Titan Season 3</option>
+                    <option>Attack on Titan Season 3 Part 2</option>
+                    <option>Attack on Titan The Final Season</option>
+                    <option>Attack on Titan OVA</option>
+                    <option>Assassination Classroom</option>
+                    <option>Assassination Classroom Season 2</option>
+                    <option>A Silent Voice</option>
+                    <option>Black Butler</option>
+                    <option>Black Butler Season 2</option>
+                    <option>Black Butler Book of Circus</option>
+                    <option>Black Clover</option>
+                    <option>Bleach</option>
+                    <option>Black Lagoon</option>
+                    <option>Berserk</option>
+                    <option>Baccano</option>
+                    <option>Boruto: Naruto Next Generation</option>
+                    <option>Boruto: Naruto The Movie</option>
+                    <option>Code Geass Lelouch of The Rebellion</option>
+                    <option>Code Geass Lelouch of The Rebellion R2</option>
+                    <option>Code Geass Movies</option>
+                    <option>Code Geass Lelouch of The Resurrection</option>
+                    <option>Code Geass Akito The Exciled</option>
+                    <option>Cowboy Bebop</option>
+                    <option>Death Note</option>
+                    <option>Death Parade</option>
+                    <option>Demon Slayer</option>
+                    <option>Demon Slayer Infinite Train Arc Movie</option>
+                    <option>Demon Slayer Infinite Train Arc</option>
+                    <option>Demon Slayer Entertainment District Arc</option>
+                    <option>Devilman Crybaby</option>
+                    <option>Digimon Adventure</option>
+                    <option>Dr Stone</option>
+                    <option>Dr Stone Stone Wars</option>
+                    <option>Dragon Ball</option>
+                    <option>Dragon Ball Z</option>
+                    <option>Dragon Ball GT</option>
+                    <option>Dragon Ball Kai</option>
+                    <option>Dragon Ball Super</option>
+                    <option>Durarara!!</option>
+                    <option>Fairy Taill</option>
+                    <option>Fate/ Stay Night</option>
+                    <option>Fate/ Stay Night: Unlimited Blade Works</option>
+                    <option>Fate/ Stay Night: Unlimited Blade Works Season 2</option>
+                    <option>Fate/ Zero </option>
+                    <option>Fate/ Zero Season 2</option>
+                    <option>Food Wars Dhoukegi No Souma (First Plate)</option>
+                    <option>Food Wars Dhoukegi No Souma (Second Plate)</option>
+                    <option>Food Wars Dhoukegi No Souma (Third Plate)</option>
+                    <option>Food Wars Dhoukegi No Souma (Fourth Plate)</option>
+                    <option>Food Wars Dhoukegi No Souma (Fifth Plate)</option>
+                    <option>Fruit Buskets</option>
+                    <option>Fruit Buskets Season 2</option>
+                    <option>Fruit Buskets The Final</option>
+                    <option>Fullmetal Alchemist </option>
+                    <option>Fullmetal Alchemist Brotherhood</option>
+                    <option>Gintama</option>
+                    <option>Grave of The Fireflies</option>
+                    <option>Guilty Crown</option>
+                    <option>Gurrenn Lagann</option>
+                    <option>Haikyuu!!</option>
+                    <option>Haikyuu!! Season 2</option>
+                    <option>Haikyuu!! Karasuno High School vs Shiratorizawa Academy</option>
+                    <option>Haikyuu!! To The Top</option>
+                    <option>Hajime No Ippo A New Challenger</option>
+                    <option>Hajime No Ippo Fighting Spirit</option>
+                    <option>Hajime No Ippo Rising</option>
+                    <option>Hellsing</option>
+                    <option>Hellsing Ultimate</option>
+                    <option>Hunter x Hunter</option>
+                    <option>I Want To Eat Youn Pancreas</option>
+                    <option>Jujutsu Kaisen</option>
+                    <option>Jojo's Bizarre Adventure OVA</option>
+                    <option>Jojo's Bizarre Adventure TV</option>
+                    <option>Kaguiya Sama Love is War</option>
+                    <option>Kaguiya Sama Love is War Season 2</option>
+                    <option>Akame Ga Kill</option>
+                    <option>Kill La Kill</option>
+                    <option>Legend of The Galactic Heroes</option>
+                    <option>Made In Abyss</option>
+                    <option>March Comes In Lion a Lion</option>
+                    <option>March Comes In Lion a Lion Season 2</option>
+                    <option>Mob Psycho 100</option>
+                    <option>Mob Psycho 100 II</option>
+                    <option>Mushishi</option>
+                    <option>Mushishi Zoku Shou</option>
+                    <option>My Hero Academia</option>
+                    <option>My Hero Academia Season 2</option>
+                    <option>My Hero Academia Season 3</option>
+                    <option>My Hero Academia Season 4</option>
+                    <option>My Hero Academia Season 5</option>
+                    <option>Naruto</option>
+                    <option>Naruto Shippuden</option>
+                    <option>Naruto The Last Movie</option>
+                    <option>Monster</option>
+                    <option>No Game No Life</option>
+                    <option>Erased</option>
+                    <option>Noragami</option>
+                    <option>Noragami Aragoto</option>
+                    <option>One Piece</option>
+                    <option>One Punch Man</option>
+                    <option>One Punch Man Season 2</option>
+                    <option>Parasyte The Maxim</option>
+                    <option>Record of Ragnarok</option>
+                    <option>Re Zero- Starting Life in Another World</option>
+                    <option>Re Zero- Starting Life in Another World Season 2</option>
+                    <option>Re Zero- Starting Life in Another World Season 2 Part 2</option>
+                    <option>Showa Genroku Rakugo Shenju</option>
+                    <option>Steins Gate</option>
+                    <option>Steins Gate 0</option>
+                    <option>Steins Gate Load Region of Deja vu</option>
+                    <option>Steins Gate Kyoukaimenjou no Missing Link – Divide By Zero</option>
+                    <option>Sword Art Online</option>
+                    <option>Sword Art Online II</option>
+                    <option>Sword Art Online Alicization</option>
+                    <option>Sword Art Online Alicization War of Underground</option>
+                    <option>Sword Art Online Alicization War of Underground Season 2</option>
+                    <option>The God of High School</option>
+                    <option>The Promised Neverland</option>
+                    <option>The Promised Neverland Season 2</option>
+                    <option>The Rising of The Shield Hero</option>
+                    <option>The Seven Deadly Sins</option>
+                    <option>The Seven Deadly Sins Dragon's Judgement</option>
+                    <option>The Seven Deadly Sins Revival of The Commandments</option>
+                    <option>The Seven Deadly Sins Signs of Holy War</option>
+                    <option>The Seven Deadly Sins Wrath of The Gods</option>
+                    <option>The Tatami Galaxy</option>
+                    <option>Toilet Bound Hanako-Kun</option>
+                    <option>Tokyo Ghoul</option>
+                    <option>Tokyo Ghoul Season 2</option>
+                    <option>Tokyo Ghoul Re</option>
+                    <option>Tokyo Ghoul Re Season 2</option>
+                    <option>Tokyo Revengers</option>
+                    <option>Toradora</option>
+                    <option>Vinland Saga</option>
+                    <option>Weathering With You</option>
+                    <option>Your Lie In April</option>
+                    <option>Your Name</option>
+                    <option>5 Centimetres Per Second</option>
+                    <option>86</option>
+                    <option>86 Season 2</option>
+                </datalist>
+                <button class="se" onclick="anime()"></button></span>
+                <br>
+                <p class="inp"><b>***Make sure that the spelling is correct***</b></p>
+            </article>
+        </div>
+        <div class="container">
+            <hr>
+        <h1 class="med">Download Anime</h1>
+        <hr>
+        <p class="n">Ten Years ago, if I have said to watch anime maybe I would have beaten. But, now the time is different. Many really good Anime have released in the past few years. So, I recommend you must watch anime if you have free timme. There are many kinds of Anime including Shounen, Dark Fantasy, Thriller, Fantasy, Romantic, Comedy etc. And Anime is completely watchable for all age. From here, you can download some really good Animes in both English dubbed and English Subbed.</p>
+        <hr>
+        <div id="hid">
+            <div class="bg-primary ep" data-toggle="collapse" data-target="#a">
+                <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;A
+                
+            </div>
+            <div id="a">
+                <a href="epaot1.html">
+                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <div class="card-image"><img class="anime" src="p.13.aot.jpg"></div>
+                        <div class="itema"><p style="font-size: 12px; color: #000;">8.9 ✯</p></div>
+                        <div class="card-text">
+                            <h4 style="font-weight: 700; font-size: 15px;">Attack On Titan/ Shingeki No Kyojin</h4>
+                            <p style="font-size: small; margin-bottom: 10px;">Action, Mistery, Horror, Thriller, Shounen, Dark Fantasy</p>
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="epaot2.html">
+                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <div class="card-image"><img class="anime" src="p.aot2.jpg"></div>
+                        <div class="itema"><p style="font-size: 12px; ">9.0 ✯</p></div>
+                        <div class="card-text">
+                            <h4 style="font-weight: 700; font-size: 15px;">Attack On Titan/ Shingeki No Kyojin Season 2</h4>
+                            <p style="font-size: small; margin-bottom: 10px;">Action, Mistery, Horror, Thriller, Shounen, Dark Fantasy</p>
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="epaot3.html">
+                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <div class="card-image"><img class="anime" src="p.18.aot3.jpg"></div>
+                        <div class="itema"><p style="font-size: 12px; ">9.1 ✯</p></div>
+                        <div class="card-text">
+                            <h4 style="font-weight: 700; font-size: 15px;">Attack On Titan/ Shingeki No Kyojin Season 3</h4>
+                            <p style="font-size: small; margin-bottom: 10px;">Action, Political, Mistery, Horror, Thriller, Shounen, Dark Fantasy</p>
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="epaot3p2.html">
+                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <div class="card-image"><img class="anime" src="p.aot3p2.jpg"></div>
+                        <div class="itema"><p style="font-size: 12px; ">9.4 ✯</p></div>
+                        <div class="card-text">
+                            <h4 style="font-weight: 700; font-size: 15px;">Attack On Titan/ Shingeki No Kyojin Season 3 Part 2</h4>
+                            <p style="font-size: small; margin-bottom: 10px;">Action, Political, Mistery, Horror, Thriller, Shounen, Dark Fantasy</p>
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="epaot4.html" class="an">
+                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <div class="card-image"><img class="anime" src="p.20.aot4.jpg"></div>
+                        <div class="itema"><p style="font-size: 12px; ">9.3 ✯</p></div>
+                        <div class="card-text">
+                            <h4 style="font-weight: 700; font-size: 15px;">Attack On Titan/ Shingeki No Kyojin The Final Season</h4>
+                            <p style="font-size: small; margin-bottom: 10px;">Action, Political, Mistery, Horror, Thriller, Dark Fantasy</p>
+                        </div>
+                        
+                    </div>
+                </a>
+                </div>
+                    <div class="bg-primary ep" data-toggle="collapse" data-target="#b">
+                    <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;B
+                    <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                    </div>
+                    <div id="b">
+                        <a href="">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="boruto-groupe-i87560.jpg"></div>
+                                <div class="itema"><p style="color: black; font-size: 12px; ">7.9 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Boruto: Naruto Next Generation</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Shounen, Action, Comedy, Adventure, Fantasy</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>  
+                    <div class="bg-primary ep" data-toggle="collapse" data-target="#c">
+                        <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;C
+                        <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                        </div>
+                    <div id="c">
+                        <a href="epcg.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.code geass.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">8.9 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Code Geass: Lelouch of The Rebellion</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Mistery, Psychology, Sci-Fi, Action, Dark Fantasy, Political, Thriller</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epcg2.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.8.code geass.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">9.0 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Code Geass: Lelouch of The Rebellion R2</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Mistery, Psychology, Sci-Fi, Action, Dark Fantasy, Political, Thriller</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epcga.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.akito.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">6.9 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Code Geass: Akito the Exiled</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Mistery, Psychology, Sci-Fi, Action, Dark Fantasy, Political, Thriller</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epcgm.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.code geass movies.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">7.7 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Code Geass Movies (Recap + New Scene)</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Mistery, Psychology, Sci-Fi, Action, Dark Fantasy, Political, Thriller</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epcgre.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.code geass re.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">7.7 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Code Geass: Lelouch of The Resurrection</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Mistery, Psychology, Sci-Fi, Action, Dark Fantasy, Political, Thriller</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epcb.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.cowboy bebop.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">9.0 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Cowboy Bebop</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Seinen, Space, Action, Western, Mistery</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        
+                    </div> 
+                    <div class="bg-primary ep" data-toggle="collapse" data-target="#d">
+                        <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;D
+                        <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                        </div>
+                    <div id="d">
+                        <a href="epdn.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.6.death note.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">9.2 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Death Note</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Detective, Psychology, Mistery, Dark Fantasy, Supernatural, Thriller</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epds.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.19.demon slayer.png"></div>
+                                <div class="itema"><p style="font-size: 12px; ">8.6 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Demon Slayer: Kimetsu no Yaiba</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Demon, Action, Adventure, Dark Fantasy, Comedy, Sword, Shounen</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epdsm.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.ds-infinite train.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">8.9 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Demon Slayer: Infinite Train (Movie)</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Demon, Action, Adventure, Dark Fantasy, Comedy, Sword, Shounen</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epdsmt.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="ds-mugentrain tv.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">8.9 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Demon Slayer: Infinite Train Arc (TV)</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Demon, Action, Adventure, Dark Fantasy, Comedy, Sword, Shounen</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epds2.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.demon slayer 2.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">8.9 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Demon Slayer: Entertainment District Arc</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Demon, Action, Adventure, Dark Fantasy, Comedy, Sword, Shounen</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epdr.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.dr stone.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">8.4 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Dr Stone</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Action, Adventure, Mistery, Sci-Fi</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a href="epdr2.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p. dr stone stone wars.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">8.8 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Dr Stone: Stone Wars</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Action, Adventure, Mistery, Sci-Fi</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="bg-primary ep" data-toggle="collapse" data-target="#f">
+                        <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;F
+                        <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                        </div>
+                    <div id="f">
+                        <a href="">
+                        <a href="epfmab.html">
+                            <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <div class="card-image"><img class="anime" src="p.9.fmab.jpg"></div>
+                                <div class="itema"><p style="font-size: 12px; ">9.3 ✯</p></div>
+                                <div class="card-text">
+                                    <h4 style="font-weight: 700; font-size: 15px;">Fullmetal Alchemist: Brotherhood</h4>
+                                    <p style="font-size: small; margin-bottom: 10px;">Action, Political, Dark Fantasy, Alchemy, Thriller</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                        <div class="bg-primary ep" data-toggle="collapse" data-target="#h">
+                            <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;H
+                            <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                            </div>
+                        <div id="h">
+                            <a href="ephky.html">
+                                <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="card-image"><img class="anime" src="p.haikyuu!!.jpg"></div>
+                                    <div class="itema"><p style="font-size: 12px; ">8.7 ✯</p></div>
+                                    <div class="card-text">
+                                        <h4 style="font-weight: 700; font-size: 15px;">Haikyuu!!</h4>
+                                        <p style="font-size: small; margin-bottom: 10px;">Sports, Volleyball, Fantasy, Comedy</p>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="ephky2.html">
+                                <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="card-image"><img class="anime" src="p.haikyuu!! 2.jpg"></div>
+                                    <div class="itema"><p style="font-size: 12px; ">8.7 ✯</p></div>
+                                    <div class="card-text">
+                                        <h4 style="font-weight: 700; font-size: 15px;">Haikyuu!! Season 2</h4>
+                                        <p style="font-size: small; margin-bottom: 10px;">Sports, Volleyball, Fantasy, Comedy</p>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="ephky3.html">
+                                <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="card-image"><img class="anime" src="p.haikyuu 3.jpg"></div>
+                                    <div class="itema"><p style="font-size: 12px; ">8.7 ✯</p></div>
+                                    <div class="card-text">
+                                        <h4 style="font-weight: 700; font-size: 13px;">Haikyuu!! Karasuno High School vs Shiratorizawa Academy</h4>
+                                        <p style="font-size: small; margin-bottom: 10px;">Sports, Volleyball, Fantasy, Comedy</p>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="ephky4.html">
+                                <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="card-image"><img class="anime" src="p.haikyuu 4.jpg"></div>
+                                    <div class="itema"><p style="font-size: 12px; ">8.7 ✯</p></div>
+                                    <div class="card-text">
+                                        <h4 style="font-weight: 700; font-size: 15px;">Haikyuu!! To The Top</h4>
+                                        <p style="font-size: small; margin-bottom: 10px;">Sports, Volleyball, Fantasy, Comedy</p>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="ephxh.html">
+                                <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="card-image"><img class="anime" src="p.11.hxh.png"></div>
+                                    <div class="itema"><p style="font-size: 12px; ">9.2 ✯</p></div>
+                                    <div class="card-text">
+                                        <h4 style="font-weight: 700; font-size: 15px;">Hunter x Hunter</h4>
+                                        <p style="font-size: small; margin-bottom: 10px;">Shounen, Action, Adventure, Martial Arts, Thriller</p>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            </div>
+                            <div class="bg-primary ep" data-toggle="collapse" data-target="#j">
+                                <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;J
+                                <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                                </div>
+                            <div id="j">
+                                <a href="epjk.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.jujutsu.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">9.0 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Jujutsu Kaisen</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Shounen, Demon, Action, Dark Fantasy, Comedy</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bg-primary ep" data-toggle="collapse" data-target="#m">
+                                <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;M
+                                <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                                </div>
+                            <div id="m">
+                                <a href="epmob.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.mob psycho 100.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">8.6 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Mob Psycho 100 </h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Comedy, Mistery, Thriller</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epmob2.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.mob psycho 100 II.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">8.8 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Mob Psycho 100 II</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Comedy, Mistery, Thriller, Seinen</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epmha1.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.16.mha.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">8.2 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">My Hero Academia/ Boku no Hero Academia</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Shounen, Action, School, Comedy, Superhero</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="p.mha2.jpg">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.mha2.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">8.8 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">My Hero Academia/ Boku no Hero Academia Season 2</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Shounen, Action, School, Comedy, Superhero</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epmha3.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.mha3.png"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">8.8 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">My Hero Academia/ Boku no Hero Academia Season 3</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Shounen, Action, School, Comedy, Superhero</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epmha4.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.mha4.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; color: #000;">8.8 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">My Hero Academia/ Boku no Hero Academia Season 4</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Shounen, Action, School, Comedy, Superhero</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epmha5.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.mha5.jpeg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">8.8 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">My Hero Academia/ Boku no Hero Academia Season 5</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Shounen, Action, School, Comedy, Superhero</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bg-primary ep" data-toggle="collapse" data-target="#n">
+                                <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;N
+                                <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                                </div>
+                            <div id="n">
+                                <a href="epnaruto.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.2.naruto.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">8.3 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Naruto</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Ninja, Shounen, Action, Adventure, Fantasy, Comedy</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epns.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.7.naruto shippudden.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">9.2 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Naruto Shippuden</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Ninja, Shounen, Action, Adventure, Fantasy, Comedy</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epnlast.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.naruto the last.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">8.7 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Naruto: The Last Movie</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Ninja, Shounen, Action, Adventure, Fantasy, Comedy, Rommance</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bg-primary ep" data-toggle="collapse" data-target="#o">
+                                <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;O
+                                <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                                </div>
+                            <div id="o">
+                                <a href="epopm.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.15.opm.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; ">9.0 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">One Punch Man</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Superhero, Comedy, Seinen</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epopm2.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.opm2.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; color: #000;">8.7 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">One Punch Man Season 2</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Superhero, Comedy, Seinen</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bg-primary ep" data-toggle="collapse" data-target="#t">
+                                <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;T
+                                <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                                </div>
+                            <div id="t">
+                                <a href="eptbh.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.hanako-kun.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px;">7.9 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Toilet Bound: Hanako-Kun</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Horror, Comedy, School, Supernatural, Action</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="eptg.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.tokyo ghoul.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px;">8.5 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Tokyo Ghoul</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Psychology, Horror, Thriller, Dark Fantasy</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="eptg2.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.tokyo ghoul 2.png"></div>
+                                        <div class="itema"><p style="font-size: 12px; color: #000;">8.8 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Tokyo Ghoul √ A</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Psychology, Horror, Thriller, Dark Fantasy</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="eptgre.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.tokyo ghoul re.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px;">7.7 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Tokyo Ghoul; Re</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Psychology, Horror, Thriller, Dark Fantasy</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="eptgre2.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.tokyo ghoul re-2.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px;">8.3 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Tokyo Ghoul; Re Season 2</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Psychology, Horror, Thriller, Dark Fantasy</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="eptr.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.tokyo revengers.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; color: #000;">8.8 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Tokyo Revengers</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Adventure, Drama, Sci-Fi</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bg-primary ep" data-toggle="collapse" data-target="#v">
+                                <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;V
+                                <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                                </div>
+                            <div id="v">
+                                <a href="epvs.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.vinland saga.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px;">9.0 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Vinland Saga</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Action, Adventure, History, Legend, Dark Fantasy, Politics</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bg-primary ep" data-toggle="collapse" data-target="#y">
+                                <span class="glyphicon glyphicon-film"></span>&nbsp;&nbsp;Y
+                                <img class="i" src="https://img.icons8.com/material-two-tone/24/000000/sort-down.png"/>
+                                </div>
+                            <div id="y">
+                                <a href="epyl.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.your lie in april.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px; color: #000;">8.8 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Your Lie in April</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Music, Rommance, Drama, Comedy</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                                <a href="epyn.html">
+                                    <div class="show card col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                        <div class="card-image"><img class="anime" src="p.your name.jpg"></div>
+                                        <div class="itema"><p style="font-size: 12px;">8.7 ✯</p></div>
+                                        <div class="card-text">
+                                            <h4 style="font-weight: 700; font-size: 15px;">Your Name/ Kimi No Nawa</h4>
+                                            <p style="font-size: small; margin-bottom: 10px;">Rommance, Drama, Fantasy, Melodrama</p>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                    
+                    </div>                         
+                            
+        </div>
+        <br>
+        <br>
+    <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Copyright &copy; 2021 www.eworld.com</footer>
+    <br>
+    <br>
+    </body>

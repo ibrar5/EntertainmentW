@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+img {
+    width: 21%;
+    padding-top: 50px;
+}
+.bp {
+    font-size: 21px;
+    color: black;
+}
+#carousel {
+    background-image: url(marvel-logo-header.jpg);
+    height: 650px;
+}
+h1 {
+    font-family: fantasy;
+}
+section {
+    height: 730px;
+    padding-bottom: 50px;
+}
+#carousel img {
+    height: 500px;
+}
+p {
+    font-size: 19px;
+    color: black;
+}
